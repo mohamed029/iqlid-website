@@ -286,34 +286,56 @@ img {
 .service-card {
     background: var(--bg-card);
     border-radius: 15px;
-    padding: 35px 25px;
-    text-align: center;
+    overflow: hidden;
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .service-card:hover {
     transform: translateY(-8px);
-    background: var(--bg-card-hover);
     border-color: rgba(212, 175, 55, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
-.service-card i {
-    font-size: 2.5rem;
+.service-img {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+
+.service-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-img img {
+    transform: scale(1.1);
+}
+
+.service-content {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.service-content i {
+    font-size: 2rem;
     color: var(--primary);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: block;
 }
 
 .service-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 12px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
     color: var(--text);
 }
 
 .service-card p {
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    line-height: 1.6;
 }
 
 /* ==========================================
