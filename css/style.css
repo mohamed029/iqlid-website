@@ -128,12 +128,14 @@ body {
     position: relative;
     z-index: 1;
     max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero-logo {
+    display: block;
     width: 280px;
     height: auto;
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
 }
 
 .hero-tagline {
@@ -425,9 +427,10 @@ body {
 }
 
 .footer-logo {
+    display: block;
     height: 60px;
     width: auto;
-    margin-bottom: 15px;
+    margin: 0 auto 15px auto;
 }
 
 .footer p {
