@@ -3,306 +3,386 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>إقليد - IQLID Systems | سيادة التقنية.. ذكاء البناء</title>
-    <meta name="description" content="إقليد للأنظمة - حلول البنية التحتية الذكية في العراق. مراكز بيانات، أنظمة أمنية، ERP، وأنظمة طاقة ذكية.">
-    <link rel="stylesheet" href="css/style.css">
+    <title>إقليد | IQLID SYSTEMS - سيادة التقنية</title>
+    <meta name="description" content="إقليد للأنظمة - حلول البنية التحتية الذكية في العراق">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">إقليد</div>
+            <div class="loader-bar"><span></span></div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
     <!-- Header -->
-    <header class="header">
-        <nav class="nav container">
-            <div class="logo">
-                <img src="images/logo.png" alt="إقليد IQLID" class="logo-img">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#services">خدماتنا</a></li>
-                <li><a href="#why-iqlid">لماذا إقليد</a></li>
-                <li><a href="#partners">شركاؤنا</a></li>
-                <li><a href="#contact">تواصل معنا</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="القائمة">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <span class="logo-icon">إ</span>
+                    <div class="logo-text">
+                        <span class="logo-ar">إقليد</span>
+                        <span class="logo-en">IQLID</span>
+                    </div>
+                </a>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#about" class="nav-link">من نحن</a></li>
+                    <li><a href="#services" class="nav-link">خدماتنا</a></li>
+                    <li><a href="#features" class="nav-link">مميزاتنا</a></li>
+                    <li><a href="#partners" class="nav-link">شركاؤنا</a></li>
+                    <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+                </ul>
+
+                <button class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg"></div>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>إقليد</h1>
-                <h2>IQLID SYSTEMS</h2>
-                <p class="tagline">سيادة التقنية.. ذكاء البناء</p>
-                <p class="hero-description">
-                    نؤمن بأن المستقبل ليس مجرد بناء هياكل صماء، بل خلق كيانات تتنفس الذكاء.
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge" data-aos="fade-down" data-aos-delay="100">
+                    <i class="ri-shield-star-line"></i>
+                    <span>الريادة في حلول البنية التحتية الذكية</span>
+                </div>
+
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                    <span class="hero-title-ar">إقليد</span>
+                    <span class="hero-title-en">IQLID SYSTEMS</span>
+                </h1>
+
+                <p class="hero-tagline" data-aos="fade-up" data-aos-delay="300">
+                    سيادة التقنية <span class="gold-dot">.</span><span class="gold-dot">.</span> ذكاء البناء
                 </p>
-                <a href="#services" class="btn btn-primary">اكتشف خدماتنا</a>
+
+                <p class="hero-desc" data-aos="fade-up" data-aos-delay="400">
+                    نؤمن بأن المستقبل ليس مجرد بناء هياكل صماء، بل خلق كيانات تتنفس الذكاء
+                </p>
+
+                <div class="hero-btns" data-aos="fade-up" data-aos-delay="500">
+                    <a href="#services" class="btn btn-primary">
+                        <span>اكتشف خدماتنا</span>
+                        <i class="ri-arrow-left-line"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+                    <div class="stat">
+                        <span class="stat-number" data-count="150">0</span>
+                        <span class="stat-label">مشروع منجز</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-label">عميل سعيد</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-label">سنوات خبرة</span>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <a href="#about" class="scroll-down">
+            <span>اكتشف المزيد</span>
+            <i class="ri-arrow-down-line"></i>
+        </a>
     </section>
 
-    <!-- Vision & Mission -->
-    <section id="vision" class="vision-section">
+    <!-- About Section -->
+    <section class="about" id="about">
         <div class="container">
-            <div class="section-header">
-                <h2>رؤيتنا ورسالتنا</h2>
-                <p>عصر جديد للبنية التحتية الذكية</p>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">من نحن</span>
+                <h2 class="section-title">رؤيتنا <span class="gold">ورسالتنا</span></h2>
+                <p class="section-desc">عصر جديد للبنية التحتية الذكية</p>
             </div>
-            <div class="vision-grid">
-                <div class="vision-card">
-                    <div class="vision-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 6v6l4 2"/>
-                        </svg>
+
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-card-icon">
+                        <i class="ri-eye-line"></i>
                     </div>
                     <h3>رؤيتنا</h3>
-                    <p>دمج صلابة الهاردوير بعبقرية السوفتوير، لنحول كل منشأة إلى نظام بيئي متكامل يفكر، يحلل، ويتكيف.</p>
+                    <p>دمج صلابة الهاردوير بعبقرية السوفتوير، لنحول كل منشأة إلى نظام بيئي متكامل يفكر، يحلل، ويتكيف مع متطلبات العصر الرقمي.</p>
+                    <div class="about-card-line"></div>
                 </div>
-                <div class="vision-card">
-                    <div class="vision-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
-                        </svg>
+
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="about-card-icon">
+                        <i class="ri-rocket-line"></i>
                     </div>
                     <h3>رسالتنا</h3>
-                    <p>تمكين الشركات العراقية بأحدث حلول الذكاء الاصطناعي المدمج، من أنظمة التبريد والطاقة إلى إدارة الموارد، لضمان كفاءة تشغيلية لا مثيل لها وسيادة تقنية مطلقة.</p>
+                    <p>تمكين الشركات العراقية بأحدث حلول الذكاء الاصطناعي المدمج، لضمان كفاءة تشغيلية لا مثيل لها وسيادة تقنية مطلقة.</p>
+                    <div class="about-card-line"></div>
+                </div>
+
+                <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="about-card-icon">
+                        <i class="ri-award-line"></i>
+                    </div>
+                    <h3>قيمنا</h3>
+                    <p>الابتكار المستمر، الجودة بلا حدود، الشراكة الحقيقية مع عملائنا، والالتزام بأعلى معايير الأمان والموثوقية.</p>
+                    <div class="about-card-line"></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services-section">
+    <section class="services" id="services">
+        <div class="services-bg"></div>
         <div class="container">
-            <div class="section-header">
-                <h2>خدماتنا</h2>
-                <p>حلول متكاملة للبنية التحتية الذكية</p>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">خدماتنا</span>
+                <h2 class="section-title">حلول <span class="gold">متكاملة</span></h2>
+                <p class="section-desc">نقدم أفضل الحلول التقنية للبنية التحتية الذكية</p>
             </div>
+
             <div class="services-grid">
-                <!-- Service 1: ERP -->
-                <div class="service-card">
+                <!-- Service 1 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-bg"></div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2"/>
-                            <path d="M8 21h8"/>
-                            <path d="M12 17v4"/>
-                        </svg>
+                        <i class="ri-computer-line"></i>
                     </div>
                     <h3>نظام إقليد الإداري</h3>
                     <p class="service-subtitle">IQLID AI-Powered ERP</p>
-                    <ul class="service-features">
-                        <li>إدارة شاملة للمؤسسة</li>
-                        <li>تقارير تنبؤية فورية</li>
-                        <li>أتمتة سير العمل</li>
-                        <li>تكامل مع الأنظمة المدمجة</li>
+                    <ul class="service-list">
+                        <li><i class="ri-check-line"></i> إدارة شاملة للمؤسسة</li>
+                        <li><i class="ri-check-line"></i> تقارير تنبؤية فورية</li>
+                        <li><i class="ri-check-line"></i> أتمتة سير العمل</li>
+                        <li><i class="ri-check-line"></i> تكامل مع الأنظمة المدمجة</li>
                     </ul>
+                    <a href="#contact" class="service-link">
+                        <span>اطلب الخدمة</span>
+                        <i class="ri-arrow-left-line"></i>
+                    </a>
                 </div>
 
-                <!-- Service 2: Data Centers -->
-                <div class="service-card">
+                <!-- Service 2 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-bg"></div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="2" width="20" height="8" rx="2"/>
-                            <rect x="2" y="14" width="20" height="8" rx="2"/>
-                            <circle cx="6" cy="6" r="1"/>
-                            <circle cx="6" cy="18" r="1"/>
-                        </svg>
+                        <i class="ri-server-line"></i>
                     </div>
-                    <h3>مراكز البيانات والبنية التحتية</h3>
-                    <p class="service-subtitle">Data Centers & Core Infrastructure</p>
-                    <ul class="service-features">
-                        <li>غرف سيرفرات متكاملة</li>
-                        <li>أرضيات تقنية مرفوعة</li>
-                        <li>تبريد دقيق ذكي</li>
-                        <li>حماية طاقة متقدمة</li>
+                    <h3>مراكز البيانات</h3>
+                    <p class="service-subtitle">Data Centers & Infrastructure</p>
+                    <ul class="service-list">
+                        <li><i class="ri-check-line"></i> غرف سيرفرات متكاملة</li>
+                        <li><i class="ri-check-line"></i> أرضيات تقنية مرفوعة</li>
+                        <li><i class="ri-check-line"></i> تبريد دقيق ذكي</li>
+                        <li><i class="ri-check-line"></i> حماية طاقة متقدمة</li>
                     </ul>
+                    <a href="#contact" class="service-link">
+                        <span>اطلب الخدمة</span>
+                        <i class="ri-arrow-left-line"></i>
+                    </a>
                 </div>
 
-                <!-- Service 3: Security -->
-                <div class="service-card">
+                <!-- Service 3 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card-bg"></div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-                            <circle cx="12" cy="13" r="4"/>
-                        </svg>
+                        <i class="ri-cctv-line"></i>
                     </div>
-                    <h3>الأنظمة الأمنية والمراقبة الذكية</h3>
-                    <p class="service-subtitle">Smart Security & Surveillance</p>
-                    <ul class="service-features">
-                        <li>كاميرات مراقبة تحليلية</li>
-                        <li>تعرف على الوجوه واللوحات</li>
-                        <li>كشف التسلل والحركة</li>
-                        <li>غرف سيطرة مركزية</li>
+                    <h3>الأنظمة الأمنية</h3>
+                    <p class="service-subtitle">Smart Security Systems</p>
+                    <ul class="service-list">
+                        <li><i class="ri-check-line"></i> كاميرات مراقبة تحليلية</li>
+                        <li><i class="ri-check-line"></i> تعرف على الوجوه</li>
+                        <li><i class="ri-check-line"></i> كشف التسلل والحركة</li>
+                        <li><i class="ri-check-line"></i> غرف سيطرة مركزية</li>
                     </ul>
+                    <a href="#contact" class="service-link">
+                        <span>اطلب الخدمة</span>
+                        <i class="ri-arrow-left-line"></i>
+                    </a>
                 </div>
 
-                <!-- Service 4: Fire Alarm -->
-                <div class="service-card">
+                <!-- Service 4 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card-bg"></div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
-                            <path d="M12 6v6l4 2"/>
-                        </svg>
+                        <i class="ri-alarm-warning-line"></i>
                     </div>
-                    <h3>أنظمة إنذار الحريق الذكية</h3>
-                    <p class="service-subtitle">Intelligent Fire Alarm Systems</p>
-                    <ul class="service-features">
-                        <li>كواشف دخان وحرارة ذكية</li>
-                        <li>تحديد الموقع بدقة</li>
-                        <li>لوحات تحكم معنونة</li>
-                        <li>تكامل مع أنظمة المباني</li>
+                    <h3>أنظمة إنذار الحريق</h3>
+                    <p class="service-subtitle">Fire Alarm Systems</p>
+                    <ul class="service-list">
+                        <li><i class="ri-check-line"></i> كواشف دخان وحرارة ذكية</li>
+                        <li><i class="ri-check-line"></i> تحديد الموقع بدقة</li>
+                        <li><i class="ri-check-line"></i> لوحات تحكم معنونة</li>
+                        <li><i class="ri-check-line"></i> تكامل مع أنظمة المباني</li>
                     </ul>
+                    <a href="#contact" class="service-link">
+                        <span>اطلب الخدمة</span>
+                        <i class="ri-arrow-left-line"></i>
+                    </a>
                 </div>
 
-                <!-- Service 5: Sound Systems -->
-                <div class="service-card">
+                <!-- Service 5 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card-bg"></div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
-                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
-                        </svg>
+                        <i class="ri-volume-up-line"></i>
                     </div>
-                    <h3>الأنظمة الصوتية والنداء العام</h3>
-                    <p class="service-subtitle">Public Address & Sound Systems</p>
-                    <ul class="service-features">
-                        <li>أنظمة نداء عام IP</li>
-                        <li>مكبرات صوت احترافية</li>
-                        <li>تحكم متعدد المناطق</li>
-                        <li>تكامل مع إنذار الحريق</li>
+                    <h3>الأنظمة الصوتية</h3>
+                    <p class="service-subtitle">Public Address Systems</p>
+                    <ul class="service-list">
+                        <li><i class="ri-check-line"></i> أنظمة نداء عام IP</li>
+                        <li><i class="ri-check-line"></i> مكبرات صوت احترافية</li>
+                        <li><i class="ri-check-line"></i> تحكم متعدد المناطق</li>
+                        <li><i class="ri-check-line"></i> تكامل مع إنذار الحريق</li>
                     </ul>
+                    <a href="#contact" class="service-link">
+                        <span>اطلب الخدمة</span>
+                        <i class="ri-arrow-left-line"></i>
+                    </a>
                 </div>
 
-                <!-- Service 6: Power Systems -->
-                <div class="service-card">
+                <!-- Service 6 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card-bg"></div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-                        </svg>
+                        <i class="ri-flashlight-line"></i>
                     </div>
-                    <h3>أنظمة الطاقة والتحكم الكهربائي</h3>
-                    <p class="service-subtitle">Smart Power & Electrical Control</p>
-                    <ul class="service-features">
-                        <li>لوحات توزيع ذكية</li>
-                        <li>أنظمة طاقة غير منقطعة UPS</li>
-                        <li>مراقبة استهلاك بالذكاء الصناعي</li>
-                        <li>حماية من تذبذب التيار</li>
+                    <h3>أنظمة الطاقة</h3>
+                    <p class="service-subtitle">Smart Power Systems</p>
+                    <ul class="service-list">
+                        <li><i class="ri-check-line"></i> لوحات توزيع ذكية</li>
+                        <li><i class="ri-check-line"></i> أنظمة UPS</li>
+                        <li><i class="ri-check-line"></i> مراقبة بالذكاء الصناعي</li>
+                        <li><i class="ri-check-line"></i> حماية من تذبذب التيار</li>
                     </ul>
+                    <a href="#contact" class="service-link">
+                        <span>اطلب الخدمة</span>
+                        <i class="ri-arrow-left-line"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why IQLID Section -->
-    <section id="why-iqlid" class="why-section">
+    <!-- Features Section -->
+    <section class="features" id="features">
         <div class="container">
-            <div class="section-header">
-                <h2>لماذا إقليد؟</h2>
-                <p>ما يميزنا عن الآخرين</p>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">لماذا إقليد</span>
+                <h2 class="section-title">ما <span class="gold">يميزنا</span></h2>
+                <p class="section-desc">نقدم قيمة حقيقية لعملائنا</p>
             </div>
-            <div class="why-grid">
-                <div class="why-card">
-                    <div class="why-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2a10 10 0 1 0 10 10H12V2z"/>
-                            <path d="M12 2a10 10 0 0 1 10 10"/>
-                            <circle cx="12" cy="12" r="6"/>
-                        </svg>
+
+            <div class="features-grid">
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="ri-brain-line"></i>
                     </div>
-                    <h3>الابتكار بالذكاء الاصطناعي المدمج</h3>
+                    <h3>الابتكار بالذكاء الاصطناعي</h3>
                     <p>نحن لا نبيع برامج صامتة، بل حلولاً تدرك وتتوقع المخاطر والفرص قبل وقوعها.</p>
                 </div>
-                <div class="why-card">
-                    <div class="why-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="3"/>
-                            <path d="M12 1v2"/>
-                            <path d="M12 21v2"/>
-                            <path d="M4.22 4.22l1.42 1.42"/>
-                            <path d="M18.36 18.36l1.42 1.42"/>
-                            <path d="M1 12h2"/>
-                            <path d="M21 12h2"/>
-                            <path d="M4.22 19.78l1.42-1.42"/>
-                            <path d="M18.36 5.64l1.42-1.42"/>
-                        </svg>
+
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="ri-settings-3-line"></i>
                     </div>
                     <h3>التكامل السيادي</h3>
                     <p>دمج هندسي فريد بين البنية التحتية الصلبة وأذكى البرمجيات في منظومة واحدة متناغمة.</p>
                 </div>
-                <div class="why-card">
-                    <div class="why-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                            <circle cx="12" cy="10" r="3"/>
-                        </svg>
+
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="ri-map-pin-line"></i>
                     </div>
-                    <h3>الخبرة الميدانية في العراق</h3>
+                    <h3>الخبرة الميدانية</h3>
                     <p>فريقنا الهندسي معك على الأرض. نفهم تحديات السوق العراقي ونقدم دعماً فورياً.</p>
+                </div>
+
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="ri-customer-service-2-line"></i>
+                    </div>
+                    <h3>دعم فني 24/7</h3>
+                    <p>فريق دعم متخصص جاهز لخدمتك على مدار الساعة لضمان استمرارية عملك.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Partners Section -->
-    <section id="partners" class="partners-section">
+    <section class="partners" id="partners">
         <div class="container">
-            <div class="section-header">
-                <h2>شراكات استراتيجية</h2>
-                <p>نفتخر بشراكتنا مع أكبر الشركات العالمية</p>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">شراكاتنا</span>
+                <h2 class="section-title">شركاء <span class="gold">النجاح</span></h2>
+                <p class="section-desc">نفتخر بشراكتنا مع أكبر الشركات العالمية</p>
             </div>
-            <div class="partners-grid">
-                <div class="partner-logo">
-                    <img src="images/nvidia.png" alt="NVIDIA">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/dell.png" alt="Dell">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/cisco.png" alt="Cisco">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/microsoft.png" alt="Microsoft">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Success Stories -->
-    <section id="success" class="success-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>قصص النجاح</h2>
-                <p>مشاريع نفتخر بها</p>
-            </div>
-            <div class="success-grid">
-                <div class="success-card">
-                    <div class="success-image">
-                        <img src="images/al-haytham.jpg" alt="شركة الهيثم">
-                    </div>
-                    <div class="success-content">
-                        <h3>شركة الهيثم</h3>
-                        <p class="success-subtitle">Al-Haytham Company</p>
-                        <p>تطبيق نظام ERP متكامل لإدارة الموارد والإنتاج.</p>
-                    </div>
+            <div class="partners-logos" data-aos="fade-up" data-aos-delay="200">
+                <div class="partner-item">
+                    <div class="partner-name">NVIDIA</div>
                 </div>
-                <div class="success-card">
-                    <div class="success-image">
-                        <img src="images/takween.jpg" alt="منصة تكوين">
+                <div class="partner-item">
+                    <div class="partner-name">DELL</div>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-name">CISCO</div>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-name">Microsoft</div>
+                </div>
+            </div>
+
+            <div class="success-stories" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="stories-title">قصص نجاح</h3>
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <div class="story-icon">
+                            <i class="ri-building-2-line"></i>
+                        </div>
+                        <h4>شركة الهيثم</h4>
+                        <p>تطبيق نظام ERP متكامل لإدارة الموارد والإنتاج</p>
                     </div>
-                    <div class="success-content">
-                        <h3>منصة تكوين</h3>
-                        <p class="success-subtitle">Takween Platform</p>
-                        <p>تجهيز بنية تحتية متطورة وسيرفرات عالية الأداء.</p>
+                    <div class="story-card">
+                        <div class="story-icon">
+                            <i class="ri-cloud-line"></i>
+                        </div>
+                        <h4>منصة تكوين</h4>
+                        <p>تجهيز بنية تحتية متطورة وسيرفرات عالية الأداء</p>
                     </div>
                 </div>
             </div>
@@ -310,64 +390,77 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="section-header">
-                <h2>تواصل معنا</h2>
-                <p>نحن هنا لمساعدتك</p>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">تواصل معنا</span>
+                <h2 class="section-title">ابدأ <span class="gold">رحلتك</span></h2>
+                <p class="section-desc">نحن هنا لمساعدتك في تحقيق أهدافك</p>
             </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
-                            </svg>
+
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-left" data-aos-delay="100">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="ri-map-pin-2-line"></i>
                         </div>
-                        <div>
+                        <div class="info-content">
                             <h4>العنوان</h4>
                             <p>العراق - بغداد</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                            </svg>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="ri-phone-line"></i>
                         </div>
-                        <div>
+                        <div class="info-content">
                             <h4>الهاتف</h4>
                             <p dir="ltr">+964 XXX XXX XXXX</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="ri-mail-line"></i>
                         </div>
-                        <div>
+                        <div class="info-content">
                             <h4>البريد الإلكتروني</h4>
                             <p>info@iqlid.com</p>
                         </div>
                     </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="social-link"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" class="social-link"><i class="ri-instagram-line"></i></a>
+                        <a href="#" class="social-link"><i class="ri-linkedin-fill"></i></a>
+                    </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="الاسم الكامل" required>
+
+                <form class="contact-form" data-aos="fade-right" data-aos-delay="200">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">الاسم الكامل</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">البريد الإلكتروني</label>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="البريد الإلكتروني" required>
+                        <input type="text" id="subject" required>
+                        <label for="subject">الموضوع</label>
                     </div>
                     <div class="form-group">
-                        <input type="tel" placeholder="رقم الهاتف">
+                        <textarea id="message" rows="5" required></textarea>
+                        <label for="message">رسالتك</label>
                     </div>
-                    <div class="form-group">
-                        <textarea placeholder="رسالتك" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>إرسال الرسالة</span>
+                        <i class="ri-send-plane-line"></i>
+                    </button>
                 </form>
             </div>
         </div>
@@ -375,37 +468,69 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="images/logo.png" alt="إقليد IQLID" class="footer-logo">
-                    <p>سيادة التقنية.. ذكاء البناء</p>
-                </div>
-                <div class="footer-links">
-                    <h4>روابط سريعة</h4>
-                    <ul>
-                        <li><a href="#home">الرئيسية</a></li>
-                        <li><a href="#services">خدماتنا</a></li>
-                        <li><a href="#why-iqlid">لماذا إقليد</a></li>
-                        <li><a href="#contact">تواصل معنا</a></li>
-                    </ul>
-                </div>
-                <div class="footer-services">
-                    <h4>خدماتنا</h4>
-                    <ul>
-                        <li>نظام ERP</li>
-                        <li>مراكز البيانات</li>
-                        <li>الأنظمة الأمنية</li>
-                        <li>أنظمة الطاقة</li>
-                    </ul>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#" class="logo">
+                            <span class="logo-icon">إ</span>
+                            <div class="logo-text">
+                                <span class="logo-ar">إقليد</span>
+                                <span class="logo-en">IQLID</span>
+                            </div>
+                        </a>
+                        <p>سيادة التقنية.. ذكاء البناء</p>
+                        <p class="footer-desc">نقدم حلول البنية التحتية الذكية المتكاملة للشركات العراقية</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>روابط سريعة</h4>
+                        <ul>
+                            <li><a href="#home">الرئيسية</a></li>
+                            <li><a href="#about">من نحن</a></li>
+                            <li><a href="#services">خدماتنا</a></li>
+                            <li><a href="#contact">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>خدماتنا</h4>
+                        <ul>
+                            <li><a href="#services">نظام ERP</a></li>
+                            <li><a href="#services">مراكز البيانات</a></li>
+                            <li><a href="#services">الأنظمة الأمنية</a></li>
+                            <li><a href="#services">أنظمة الطاقة</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-newsletter">
+                        <h4>النشرة البريدية</h4>
+                        <p>اشترك للحصول على آخر الأخبار والعروض</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="بريدك الإلكتروني">
+                            <button type="submit"><i class="ri-send-plane-fill"></i></button>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
                 <p>&copy; 2025 إقليد IQLID Systems. جميع الحقوق محفوظة.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Main JS -->
     <script src="js/main.js"></script>
 </body>
 </html>
