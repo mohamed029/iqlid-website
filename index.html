@@ -3,459 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>إقليد | IQLID SYSTEMS - سيادة التقنية</title>
-    <meta name="description" content="إقليد للأنظمة - حلول البنية التحتية الذكية في العراق">
-
-    <!-- Fonts -->
+    <title>إقليد | IQLID SYSTEMS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- AOS Animation Library -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Remix Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Loader -->
-    <div class="loader" id="loader">
-        <div class="loader-content">
-            <img src="images/logo.png" alt="إقليد" class="loader-logo-img">
-            <div class="loader-bar"><span></span></div>
-        </div>
-    </div>
-
-    <!-- Cursor -->
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
 
     <!-- Header -->
     <header class="header" id="header">
         <div class="container">
+            <a href="#home" class="logo">
+                <img src="images/logo.png" alt="إقليد">
+            </a>
             <nav class="nav">
-                <a href="#" class="logo">
-                    <img src="images/logo.png" alt="إقليد IQLID Systems" class="logo-img">
-                </a>
-
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="#home" class="nav-link active">الرئيسية</a></li>
-                    <li><a href="#about" class="nav-link">من نحن</a></li>
-                    <li><a href="#services" class="nav-link">خدماتنا</a></li>
-                    <li><a href="#features" class="nav-link">مميزاتنا</a></li>
-                    <li><a href="#partners" class="nav-link">شركاؤنا</a></li>
-                    <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
                 </ul>
-
                 <button class="nav-toggle" id="nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <i class="ri-menu-line"></i>
                 </button>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero" id="home">
-        <div class="hero-bg">
-            <div class="hero-gradient"></div>
-            <div class="hero-grid"></div>
-            <div class="hero-particles" id="particles"></div>
-        </div>
-
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge" data-aos="fade-down" data-aos-delay="100">
-                    <i class="ri-shield-star-line"></i>
-                    <span>الريادة في حلول البنية التحتية الذكية</span>
-                </div>
-
-                <div class="hero-logo" data-aos="fade-up" data-aos-delay="200">
-                    <img src="images/logo.png" alt="إقليد IQLID Systems">
-                </div>
-
-                <p class="hero-tagline" data-aos="fade-up" data-aos-delay="300">
-                    سيادة التقنية <span class="gold-dot">.</span><span class="gold-dot">.</span> ذكاء البناء
-                </p>
-
-                <p class="hero-desc" data-aos="fade-up" data-aos-delay="400">
-                    نؤمن بأن المستقبل ليس مجرد بناء هياكل صماء، بل خلق كيانات تتنفس الذكاء
-                </p>
-
-                <div class="hero-btns" data-aos="fade-up" data-aos-delay="500">
-                    <a href="#services" class="btn btn-primary">
-                        <span>اكتشف خدماتنا</span>
-                        <i class="ri-arrow-left-line"></i>
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        <span>تواصل معنا</span>
-                    </a>
-                </div>
-
-                <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
-                    <div class="stat">
-                        <span class="stat-number" data-count="150">0</span>
-                        <span class="stat-label">مشروع منجز</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-count="50">0</span>
-                        <span class="stat-label">عميل سعيد</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-count="10">0</span>
-                        <span class="stat-label">سنوات خبرة</span>
-                    </div>
+            <div class="hero-content" data-aos="fade-up">
+                <img src="images/logo.png" alt="إقليد IQLID Systems" class="hero-logo">
+                <h2 class="hero-tagline">سيادة التقنية .. ذكاء البناء</h2>
+                <p class="hero-desc">نؤمن بأن المستقبل ليس مجرد بناء هياكل صماء، بل خلق كيانات تتنفس الذكاء</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">اكتشف خدماتنا</a>
+                    <a href="#contact" class="btn btn-outline">تواصل معنا</a>
                 </div>
             </div>
         </div>
-
-        <a href="#about" class="scroll-down">
-            <span>اكتشف المزيد</span>
-            <i class="ri-arrow-down-line"></i>
-        </a>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section class="about" id="about">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">من نحن</span>
-                <h2 class="section-title">رؤيتنا <span class="gold">ورسالتنا</span></h2>
-                <p class="section-desc">عصر جديد للبنية التحتية الذكية</p>
-            </div>
-
+            <h2 class="section-title" data-aos="fade-up">من <span>نحن</span></h2>
             <div class="about-grid">
                 <div class="about-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="about-card-icon">
-                        <i class="ri-eye-line"></i>
-                    </div>
+                    <i class="ri-eye-line"></i>
                     <h3>رؤيتنا</h3>
-                    <p>دمج صلابة الهاردوير بعبقرية السوفتوير، لنحول كل منشأة إلى نظام بيئي متكامل يفكر، يحلل، ويتكيف مع متطلبات العصر الرقمي.</p>
-                    <div class="about-card-line"></div>
+                    <p>دمج صلابة الهاردوير بعبقرية السوفتوير، لنحول كل منشأة إلى نظام بيئي متكامل يفكر ويتكيف.</p>
                 </div>
-
                 <div class="about-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="about-card-icon">
-                        <i class="ri-rocket-line"></i>
-                    </div>
+                    <i class="ri-rocket-line"></i>
                     <h3>رسالتنا</h3>
-                    <p>تمكين الشركات العراقية بأحدث حلول الذكاء الاصطناعي المدمج، لضمان كفاءة تشغيلية لا مثيل لها وسيادة تقنية مطلقة.</p>
-                    <div class="about-card-line"></div>
+                    <p>تمكين الشركات العراقية بأحدث حلول الذكاء الاصطناعي لضمان كفاءة تشغيلية وسيادة تقنية مطلقة.</p>
                 </div>
-
                 <div class="about-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="about-card-icon">
-                        <i class="ri-award-line"></i>
-                    </div>
+                    <i class="ri-award-line"></i>
                     <h3>قيمنا</h3>
-                    <p>الابتكار المستمر، الجودة بلا حدود، الشراكة الحقيقية مع عملائنا، والالتزام بأعلى معايير الأمان والموثوقية.</p>
-                    <div class="about-card-line"></div>
+                    <p>الابتكار المستمر، الجودة بلا حدود، والالتزام بأعلى معايير الأمان والموثوقية.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services -->
     <section class="services" id="services">
-        <div class="services-bg"></div>
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">خدماتنا</span>
-                <h2 class="section-title">حلول <span class="gold">متكاملة</span></h2>
-                <p class="section-desc">نقدم أفضل الحلول التقنية للبنية التحتية الذكية</p>
-            </div>
-
+            <h2 class="section-title" data-aos="fade-up">خدماتنا</h2>
             <div class="services-grid">
-                <!-- Service 1 -->
                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-card-bg"></div>
-                    <div class="service-icon">
-                        <i class="ri-computer-line"></i>
-                    </div>
+                    <i class="ri-computer-line"></i>
                     <h3>نظام إقليد الإداري</h3>
-                    <p class="service-subtitle">IQLID AI-Powered ERP</p>
-                    <ul class="service-list">
-                        <li><i class="ri-check-line"></i> إدارة شاملة للمؤسسة</li>
-                        <li><i class="ri-check-line"></i> تقارير تنبؤية فورية</li>
-                        <li><i class="ri-check-line"></i> أتمتة سير العمل</li>
-                        <li><i class="ri-check-line"></i> تكامل مع الأنظمة المدمجة</li>
-                    </ul>
-                    <a href="#contact" class="service-link">
-                        <span>اطلب الخدمة</span>
-                        <i class="ri-arrow-left-line"></i>
-                    </a>
+                    <p>نظام ERP مدعوم بالذكاء الاصطناعي لإدارة شاملة للمؤسسة</p>
                 </div>
-
-                <!-- Service 2 -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-card-bg"></div>
-                    <div class="service-icon">
-                        <i class="ri-server-line"></i>
-                    </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+                    <i class="ri-server-line"></i>
                     <h3>مراكز البيانات</h3>
-                    <p class="service-subtitle">Data Centers & Infrastructure</p>
-                    <ul class="service-list">
-                        <li><i class="ri-check-line"></i> غرف سيرفرات متكاملة</li>
-                        <li><i class="ri-check-line"></i> أرضيات تقنية مرفوعة</li>
-                        <li><i class="ri-check-line"></i> تبريد دقيق ذكي</li>
-                        <li><i class="ri-check-line"></i> حماية طاقة متقدمة</li>
-                    </ul>
-                    <a href="#contact" class="service-link">
-                        <span>اطلب الخدمة</span>
-                        <i class="ri-arrow-left-line"></i>
-                    </a>
+                    <p>غرف سيرفرات متكاملة مع تبريد ذكي وحماية طاقة متقدمة</p>
                 </div>
-
-                <!-- Service 3 -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-card-bg"></div>
-                    <div class="service-icon">
-                        <i class="ri-cctv-line"></i>
-                    </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="ri-cctv-line"></i>
                     <h3>الأنظمة الأمنية</h3>
-                    <p class="service-subtitle">Smart Security Systems</p>
-                    <ul class="service-list">
-                        <li><i class="ri-check-line"></i> كاميرات مراقبة تحليلية</li>
-                        <li><i class="ri-check-line"></i> تعرف على الوجوه</li>
-                        <li><i class="ri-check-line"></i> كشف التسلل والحركة</li>
-                        <li><i class="ri-check-line"></i> غرف سيطرة مركزية</li>
-                    </ul>
-                    <a href="#contact" class="service-link">
-                        <span>اطلب الخدمة</span>
-                        <i class="ri-arrow-left-line"></i>
-                    </a>
+                    <p>كاميرات مراقبة تحليلية مع تعرف على الوجوه وكشف التسلل</p>
                 </div>
-
-                <!-- Service 4 -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-card-bg"></div>
-                    <div class="service-icon">
-                        <i class="ri-alarm-warning-line"></i>
-                    </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+                    <i class="ri-alarm-warning-line"></i>
                     <h3>أنظمة إنذار الحريق</h3>
-                    <p class="service-subtitle">Fire Alarm Systems</p>
-                    <ul class="service-list">
-                        <li><i class="ri-check-line"></i> كواشف دخان وحرارة ذكية</li>
-                        <li><i class="ri-check-line"></i> تحديد الموقع بدقة</li>
-                        <li><i class="ri-check-line"></i> لوحات تحكم معنونة</li>
-                        <li><i class="ri-check-line"></i> تكامل مع أنظمة المباني</li>
-                    </ul>
-                    <a href="#contact" class="service-link">
-                        <span>اطلب الخدمة</span>
-                        <i class="ri-arrow-left-line"></i>
-                    </a>
+                    <p>كواشف دخان وحرارة ذكية مع لوحات تحكم معنونة</p>
                 </div>
-
-                <!-- Service 5 -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="service-card-bg"></div>
-                    <div class="service-icon">
-                        <i class="ri-volume-up-line"></i>
-                    </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="ri-volume-up-line"></i>
                     <h3>الأنظمة الصوتية</h3>
-                    <p class="service-subtitle">Public Address Systems</p>
-                    <ul class="service-list">
-                        <li><i class="ri-check-line"></i> أنظمة نداء عام IP</li>
-                        <li><i class="ri-check-line"></i> مكبرات صوت احترافية</li>
-                        <li><i class="ri-check-line"></i> تحكم متعدد المناطق</li>
-                        <li><i class="ri-check-line"></i> تكامل مع إنذار الحريق</li>
-                    </ul>
-                    <a href="#contact" class="service-link">
-                        <span>اطلب الخدمة</span>
-                        <i class="ri-arrow-left-line"></i>
-                    </a>
+                    <p>أنظمة نداء عام IP مع مكبرات صوت احترافية</p>
                 </div>
-
-                <!-- Service 6 -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="service-card-bg"></div>
-                    <div class="service-icon">
-                        <i class="ri-flashlight-line"></i>
-                    </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+                    <i class="ri-flashlight-line"></i>
                     <h3>أنظمة الطاقة</h3>
-                    <p class="service-subtitle">Smart Power Systems</p>
-                    <ul class="service-list">
-                        <li><i class="ri-check-line"></i> لوحات توزيع ذكية</li>
-                        <li><i class="ri-check-line"></i> أنظمة UPS</li>
-                        <li><i class="ri-check-line"></i> مراقبة بالذكاء الصناعي</li>
-                        <li><i class="ri-check-line"></i> حماية من تذبذب التيار</li>
-                    </ul>
-                    <a href="#contact" class="service-link">
-                        <span>اطلب الخدمة</span>
-                        <i class="ri-arrow-left-line"></i>
-                    </a>
+                    <p>لوحات توزيع ذكية وأنظمة UPS مع مراقبة بالذكاء الصناعي</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">لماذا إقليد</span>
-                <h2 class="section-title">ما <span class="gold">يميزنا</span></h2>
-                <p class="section-desc">نقدم قيمة حقيقية لعملائنا</p>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="feature-icon">
-                        <i class="ri-brain-line"></i>
-                    </div>
-                    <h3>الابتكار بالذكاء الاصطناعي</h3>
-                    <p>نحن لا نبيع برامج صامتة، بل حلولاً تدرك وتتوقع المخاطر والفرص قبل وقوعها.</p>
-                </div>
-
-                <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="feature-icon">
-                        <i class="ri-settings-3-line"></i>
-                    </div>
-                    <h3>التكامل السيادي</h3>
-                    <p>دمج هندسي فريد بين البنية التحتية الصلبة وأذكى البرمجيات في منظومة واحدة متناغمة.</p>
-                </div>
-
-                <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="feature-icon">
-                        <i class="ri-map-pin-line"></i>
-                    </div>
-                    <h3>الخبرة الميدانية</h3>
-                    <p>فريقنا الهندسي معك على الأرض. نفهم تحديات السوق العراقي ونقدم دعماً فورياً.</p>
-                </div>
-
-                <div class="feature-card" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="feature-icon">
-                        <i class="ri-customer-service-2-line"></i>
-                    </div>
-                    <h3>دعم فني 24/7</h3>
-                    <p>فريق دعم متخصص جاهز لخدمتك على مدار الساعة لضمان استمرارية عملك.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partners Section -->
+    <!-- Partners -->
     <section class="partners" id="partners">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">شراكاتنا</span>
-                <h2 class="section-title">شركاء <span class="gold">النجاح</span></h2>
-                <p class="section-desc">نفتخر بشراكتنا مع أكبر الشركات العالمية</p>
-            </div>
-
-            <div class="partners-logos" data-aos="fade-up" data-aos-delay="200">
-                <div class="partner-item">
-                    <div class="partner-name">NVIDIA</div>
-                </div>
-                <div class="partner-item">
-                    <div class="partner-name">DELL</div>
-                </div>
-                <div class="partner-item">
-                    <div class="partner-name">CISCO</div>
-                </div>
-                <div class="partner-item">
-                    <div class="partner-name">Microsoft</div>
-                </div>
-            </div>
-
-            <div class="success-stories" data-aos="fade-up" data-aos-delay="300">
-                <h3 class="stories-title">قصص نجاح</h3>
-                <div class="stories-grid">
-                    <div class="story-card">
-                        <div class="story-icon">
-                            <i class="ri-building-2-line"></i>
-                        </div>
-                        <h4>شركة الهيثم</h4>
-                        <p>تطبيق نظام ERP متكامل لإدارة الموارد والإنتاج</p>
-                    </div>
-                    <div class="story-card">
-                        <div class="story-icon">
-                            <i class="ri-cloud-line"></i>
-                        </div>
-                        <h4>منصة تكوين</h4>
-                        <p>تجهيز بنية تحتية متطورة وسيرفرات عالية الأداء</p>
-                    </div>
-                </div>
+            <h2 class="section-title" data-aos="fade-up">شركاؤنا</h2>
+            <div class="partners-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="partner">NVIDIA</div>
+                <div class="partner">DELL</div>
+                <div class="partner">CISCO</div>
+                <div class="partner">Microsoft</div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section class="contact" id="contact">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">تواصل معنا</span>
-                <h2 class="section-title">ابدأ <span class="gold">رحلتك</span></h2>
-                <p class="section-desc">نحن هنا لمساعدتك في تحقيق أهدافك</p>
-            </div>
-
-            <div class="contact-wrapper">
-                <div class="contact-info" data-aos="fade-left" data-aos-delay="100">
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <i class="ri-map-pin-2-line"></i>
-                        </div>
-                        <div class="info-content">
+            <h2 class="section-title" data-aos="fade-up">تواصل <span>معنا</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
+                    <div class="info-item">
+                        <i class="ri-map-pin-line"></i>
+                        <div>
                             <h4>العنوان</h4>
                             <p>العراق - بغداد</p>
                         </div>
                     </div>
-
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <i class="ri-phone-line"></i>
-                        </div>
-                        <div class="info-content">
+                    <div class="info-item">
+                        <i class="ri-phone-line"></i>
+                        <div>
                             <h4>الهاتف</h4>
                             <p dir="ltr">+964 XXX XXX XXXX</p>
                         </div>
                     </div>
-
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <i class="ri-mail-line"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4>البريد الإلكتروني</h4>
+                    <div class="info-item">
+                        <i class="ri-mail-line"></i>
+                        <div>
+                            <h4>البريد</h4>
                             <p>info@iqlid.com</p>
                         </div>
                     </div>
-
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="ri-facebook-fill"></i></a>
-                        <a href="#" class="social-link"><i class="ri-twitter-x-line"></i></a>
-                        <a href="#" class="social-link"><i class="ri-instagram-line"></i></a>
-                        <a href="#" class="social-link"><i class="ri-linkedin-fill"></i></a>
-                    </div>
                 </div>
-
-                <form class="contact-form" data-aos="fade-right" data-aos-delay="200">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" id="name" required>
-                            <label for="name">الاسم الكامل</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" required>
-                            <label for="email">البريد الإلكتروني</label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" required>
-                        <label for="subject">الموضوع</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" rows="5" required></textarea>
-                        <label for="message">رسالتك</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">
-                        <span>إرسال الرسالة</span>
-                        <i class="ri-send-plane-line"></i>
-                    </button>
+                <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+                    <input type="text" placeholder="الاسم" required>
+                    <input type="email" placeholder="البريد الإلكتروني" required>
+                    <textarea placeholder="رسالتك" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">إرسال</button>
                 </form>
             </div>
         </div>
@@ -463,65 +164,35 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-brand">
-                        <a href="#" class="logo">
-                            <img src="images/logo.png" alt="إقليد IQLID Systems" class="footer-logo-img">
-                        </a>
-                        <p class="footer-tagline">سيادة التقنية.. ذكاء البناء</p>
-                        <p class="footer-desc">نقدم حلول البنية التحتية الذكية المتكاملة للشركات العراقية</p>
-                    </div>
-
-                    <div class="footer-links">
-                        <h4>روابط سريعة</h4>
-                        <ul>
-                            <li><a href="#home">الرئيسية</a></li>
-                            <li><a href="#about">من نحن</a></li>
-                            <li><a href="#services">خدماتنا</a></li>
-                            <li><a href="#contact">تواصل معنا</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-links">
-                        <h4>خدماتنا</h4>
-                        <ul>
-                            <li><a href="#services">نظام ERP</a></li>
-                            <li><a href="#services">مراكز البيانات</a></li>
-                            <li><a href="#services">الأنظمة الأمنية</a></li>
-                            <li><a href="#services">أنظمة الطاقة</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-newsletter">
-                        <h4>النشرة البريدية</h4>
-                        <p>اشترك للحصول على آخر الأخبار والعروض</p>
-                        <form class="newsletter-form">
-                            <input type="email" placeholder="بريدك الإلكتروني">
-                            <button type="submit"><i class="ri-send-plane-fill"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2025 إقليد IQLID Systems. جميع الحقوق محفوظة.</p>
-            </div>
+        <div class="container">
+            <img src="images/logo.png" alt="إقليد" class="footer-logo">
+            <p>سيادة التقنية .. ذكاء البناء</p>
+            <p class="copyright">&copy; 2025 إقليد IQLID Systems. جميع الحقوق محفوظة.</p>
         </div>
     </footer>
 
-    <!-- Back to Top -->
-    <a href="#" class="back-to-top" id="backToTop">
-        <i class="ri-arrow-up-line"></i>
-    </a>
-
-    <!-- AOS Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
 
-    <!-- Main JS -->
-    <script src="js/main.js"></script>
+        // Header scroll
+        window.addEventListener('scroll', () => {
+            document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Mobile menu
+        document.getElementById('nav-toggle').addEventListener('click', () => {
+            document.getElementById('nav-menu').classList.toggle('active');
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('nav-menu').classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
